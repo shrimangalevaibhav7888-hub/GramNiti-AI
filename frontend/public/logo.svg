@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#072B61" />
+      <stop offset="100%" stop-color="#0047BA" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F7633" />
+      <stop offset="100%" stop-color="#16A34A" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. TOP EMBLEM (Hexagon + Fields + Chart + Arrow) -->
+  <g transform="translate(500, 230)">
+    
+    <!-- Outer Hexagonal Frame (Deep Navy) -->
+    <path 
+      d="M 0,-200 L 155,-110 L 155,70 L 0,160 L -155,70 L -155,-110 Z" 
+      fill="none" 
+      stroke="#0A2558" 
+      stroke-width="32" 
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Inner White Cutout -->
+    <path 
+      d="M 0,-168 L 126,-95 L 126,56 L 0,130 L -126,56 L -126,-95 Z" 
+      fill="#FFFFFF" 
+    />
+
+    <!-- Floating Digital Pixels (Top Left inside Hexagon) -->
+    <rect x="-85" y="-120" width="22" height="22" rx="4" fill="#0284C7" />
+    <rect x="-56" y="-120" width="22" height="22" rx="4" fill="#F97316" />
+    <rect x="-114" y="-91" width="22" height="22" rx="4" fill="#16A34A" />
+    <rect x="-85" y="-91" width="22" height="22" rx="4" fill="#0284C7" />
+    <rect x="-85" y="-62" width="22" height="22" rx="4" fill="#0A2558" />
+
+    <!-- Rising Blue Bar Chart Columns -->
+    <rect x="-24" y="-30" width="34" height="95" rx="5" fill="#0284C7" />
+    <rect x="18" y="-70" width="34" height="135" rx="5" fill="#00509E" />
+
+    <!-- Surging Green Growth Arrow Line -->
+    <path 
+      d="M -135,50 L -30,85 L 85,-90 L 115,-135" 
+      fill="none" 
+      stroke="url(#arrowGrad)" 
+      stroke-width="32" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+    <!-- Arrowhead pointing Up-Right -->
+    <polygon points="120,-175 160,-105 85,-115" fill="#16A34A" />
+
+    <!-- Agricultural Green Field Furrows / Cultivated Land Base -->
+    <!-- Furrow 1 (Leftmost) -->
+    <path d="M -145,55 C -115,62 -85,78 -70,98 L -94,118 C -115,100 -138,90 -160,82 Z" fill="#00873E" />
+    <!-- Furrow 2 (Mid-Left) -->
+    <path d="M -110,75 C -80,85 -50,105 -35,130 L -60,150 C -80,128 -105,112 -128,102 Z" fill="#0F7633" />
+    <!-- Furrow 3 (Center) -->
+    <path d="M -70,100 C -35,115 -5,142 5,175 L -22,192 C -38,162 -65,138 -90,125 Z" fill="#15803D" />
+    <!-- Furrow 4 (Right Curved S-Tail) -->
+    <path d="M -25,128 C 15,148 40,185 45,225 C 10,210 -5,185 -45,160 Z" fill="#166534" />
+
+  </g>
+
+  <!-- 2. TYPOGRAPHY LOCKUP (GramNiti [AI]) -->
+  <g transform="translate(100, 570)">
+    
+    <!-- Text "Gram" in Deep Navy -->
+    <text 
+      x="0" 
+      y="0" 
+      font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Outfit', 'Inter', sans-serif" 
+      font-size="140" 
+      font-weight="900" 
+      letter-spacing="-3" 
+      fill="#0B2559"
+    >Gram</text>
+
+    <!-- Text "Niti" in Agricultural Green -->
+    <text 
+      x="365" 
+      y="0" 
+      font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Outfit', 'Inter', sans-serif" 
+      font-size="140" 
+      font-weight="900" 
+      letter-spacing="-3" 
+      fill="#00873E"
+    >Niti</text>
+
+    <!-- [AI] Badge Container with Rounded Corners -->
+    <g transform="translate(620, -115)">
+      <rect x="0" y="0" width="140" height="130" rx="30" fill="url(#badgeGrad)" />
+      
+      <!-- Text "AI" in Bold White -->
+      <text 
+        x="70" 
+        y="95" 
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Outfit', 'Inter', sans-serif" 
+        font-size="92" 
+        font-weight="900" 
+        text-anchor="middle" 
+        fill="#FFFFFF"
+      >AI</text>
+
+      <!-- Floating Digital Pixels on Top Right of AI Badge -->
+      <rect x="120" y="-35" width="22" height="22" rx="4" fill="#16A34A" />
+      <rect x="150" y="-45" width="24" height="24" rx="4" fill="#F97316" />
+      <rect x="145" y="-15" width="20" height="20" rx="4" fill="#0284C7" />
+    </g>
+
+  </g>
+</svg>

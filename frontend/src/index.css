@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FAF9F3] text-slate-900 font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Multi-Script Font Fallback for Indian Languages & Urdu */
+  body, button, input, select, textarea {
+    font-family: 'Inter', 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Bengali', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Kannada', 'Noto Sans Malayalam', 'Noto Sans Oriya', 'Noto Nastaliq Urdu', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Urdu RTL Typography & Alignment Enhancement */
+  [dir="rtl"] {
+    text-align: right;
+  }
+
+  [dir="rtl"] input, 
+  [dir="rtl"] textarea {
+    text-align: right;
+  }
+
+  [dir="rtl"] .ltr-preserve {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+}
+
+/* Custom Scrollbar for Rural Accessibility */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4e2c5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64af71;
+}
+
+/* Print Styles for Bankable Detailed Project Report (DPR) */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
